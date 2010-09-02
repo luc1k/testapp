@@ -1,0 +1,28 @@
+<p>
+  <b>Accepted:</b>
+  <%=h @profile.accepted %>
+</p>
+
+<p>
+  <b>Wrong answer:</b>
+  <%=h @profile.wrong_answer %>
+</p>
+
+<p>
+  <b>Timelimit:</b>
+  <%=h @profile.timelimit %>
+</p>
+
+<p>
+  <b>Memorylimit:</b>
+  <%=h @profile.memorylimit %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%=h @profile.score %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

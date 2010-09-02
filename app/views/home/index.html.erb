@@ -1,0 +1,14 @@
+<h1>Последние посты</h1>
+
+<% for post in @posts %>
+<hr>
+<div class="entry">
+  <div class="postname">
+    <%= link_to post.name, post %>
+  </div>
+  <div class="postbody">
+    <%= post.body %>
+  </div>
+</div>
+</hr>
+<% end %>

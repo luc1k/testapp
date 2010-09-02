@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  accepted: 1
+  wrong_answer: 1
+  timelimit: 1
+  memorylimit: 1
+  score: 1
+
+two:
+  accepted: 1
+  wrong_answer: 1
+  timelimit: 1
+  memorylimit: 1
+  score: 1

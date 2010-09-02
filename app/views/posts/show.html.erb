@@ -1,0 +1,39 @@
+<p>
+    <b>Name:</b>
+    <%=h @post.name %>
+</p>
+<p>
+    <b>Content:</b>
+    <%=h @post.body %>
+</p>
+<p>
+  <b>Author:</b>
+  <%=h show_username_by_id(@post.user_id) %>
+</p>
+<h2>Comments</h2>
+<% for comment in @comments %>
+<div class="comment">
+  <p>
+  
+    <b>Commenter:</b>
+    <%=h show_username_by_id(comment.user_id) %>
+  </p>
+  <p>
+    <b>Comment:</b>
+    <%=h comment.body %>
+  </p>
+ <%= link_to 'Destroy', post_comment_path(@post, comment), :confirm => 'Are you sure?', :method => :delete %>
+</div>
+<% end %>
+<% form_for @post, :url => { :action => "add_comment", :id => @post.id } do |f| %>
+  <% f.fields_for :comment do |comment_form| %>
+  <p>
+    <%= comment_form.label :body, "Message"%>
+    <br />
+    <%= comment_form.text_area :body %>
+    <%= comment_form.hidden_field :user_id, :value => session[:user_id] %>
+  </p>
+  <% end %>
+<%= submit_tag %>
+<% end %>
+<%= link_to 'Edit Post', edit_post_path(@post) %> | <%= link_to 'Back to Posts', posts_path %>| <%= link_to 'Manage Comments', post_comments_path(@post) %>

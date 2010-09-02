@@ -1,0 +1,82 @@
+#banner {
+    background: #e4a10e ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 40px/40px "Times New Roman", serif;
+    color: #ffffff ;
+    text-align: center;
+}
+#banner img {
+    float: left;
+}
+#columns {
+    background: #e4a10e ;
+}
+#main {
+    margin-left: 13em;
+    padding-top: 4ex;
+    padding-left: 2em;
+    background: white;
+}
+#side {
+    float: left;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 12em;
+    background: #e4a10e ;
+}
+#side a {
+    color: #ffffff ;
+    font-size: small;
+}
+.entry {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fieldWithErrors {
+padding: 2px;
+background-color: #EEFFEE;
+display: inline;
+}
+.fieldWithErrors * {
+background-color: red;
+}
+#errorExplanation {
+width: 400px;
+border: 2px solid red;
+padding: 7px;
+padding-bottom: 12px;
+margin-bottom: 20px;
+background-color: #f0f0f0;
+}
+#errorExplanation h2 {
+text-align: left;
+font-weight: bold;
+padding: 5px 5px 5px 15px;
+font-size: 12px;
+margin: -7px;
+background-color: #c00;
+color: #fff;
+}
+#errorExplanation p {
+color: #333;
+margin-bottom: 0;
+padding: 5px;
+}
+#errorExplanation ul li {
+font-size: 12px;
+list-style: square;
+}
+.locale {
+float:right;
+padding-top: 0.2em
+}
+#notice {
+border: 2px solid red;
+padding: 1em;
+margin-bottom: 2em;
+background-color: #f0f0f0;
+font: bold smaller sans-serif;
+}
